@@ -5,13 +5,92 @@ html, body {
 }
 
 .wrapper {
-    width: 70%;
+    width: 980px;
     margin: 0 auto;
-    background-color: aqua;
-    height: 100%;
+    height: 2856px;
+}
+
+.header {
+    width: 100%;
+    height: 135px;
+    background-color: beige;
+}
+
+.side-menu {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
 }
 
 .section {
-    width: 100%;
     height: 100%;
 }
+
+.footer {
+    height: 359px;
+    background-color: black;
+}
+
+.card-multitab-wrapper {
+    background-color: white;
+    border-bottom: 2px solid rgb(21, 36, 117);
+}
+
+.card-multitab {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-multitab li {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.card-multitab li a {
+    color: rgb(21, 36, 117);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    width: 152px;
+    border-bottom: none;
+    position: relative;
+    z-index: inherit;
+}
+
+/* 상태별 높이, border, top 조절 */
+.active > a {
+    font-weight: bold;
+    height: 48px;
+    border: 2px solid rgb(21, 36, 117);
+    border-bottom: none;
+    background-color: white;
+    top: 2px;
+    z-index: 2;
+}
+
+.none-active > a {
+    height: 42px;
+    border: 1px solid #c0c0c0;
+}
+
+.none-active:first-child > a {
+    border-right: none;
+}
+
+.none-active:last-child > a {
+    border-left: none;
+}
+
+.card-multitab li a:hover {
+    text-decoration: underline;
+}
+
