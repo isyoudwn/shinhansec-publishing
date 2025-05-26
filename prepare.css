@@ -94,3 +94,63 @@ html, body {
     text-decoration: underline;
 }
 
+.titDep2 {
+  position: relative;
+  padding-left: 10px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #111;
+  margin-top: 148px;
+  margin-bottom: 18px;
+  line-height: 1.3; /* 텍스트 높이 안정화 */
+}
+
+.titDep2:before{content:'';display:inline-block;width:5px;height:19px;margin:-2px 8px 0 0;vertical-align:middle;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_titdep.gif) 0 0 no-repeat}
+
+/* 하위 제목 */
+.titDep3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #191970; /* 짙은 남색 */
+  margin: 24px 0 12px;
+}
+
+/* 리스트 */
+.titList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.titList li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #222;
+  position: relative;
+  padding-left: 12px;
+}
+
+.titList li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #6ea8e6;
+  border-radius: 50%;
+}
+
+.btnM {
+    border: solid 0.9px rgb(153, 153, 153);
+    width: 103px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* 아래쪽 간격 추가 */
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block; /* 간격 조절 시 안전하게 */
+}
