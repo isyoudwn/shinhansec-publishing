@@ -67,7 +67,6 @@ body{
     font-family: 'Nanum';
     overflow: hidden;
     display: block;
-    height: 13px;
     padding: 9px;
     color: #4f5156;
     font-size: 12px;
@@ -128,12 +127,43 @@ body{
     justify-content: end;
 }
 
-.naviSecond button{
+.naviSecond .btns{
     background-color: #1598DC;
     width: 65px;
     height: 65px;
-    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px gray solid;
+
+    
 }
+
+.mypage_btn{
+    width: 27px;
+    height: 27px;
+    border: none;
+    background-image: url(src/ci.png);
+    background-position: -193px 0;
+    background-color: #1598DC;
+}
+.search_btn{
+    width: 24px;
+    height: 25px;
+    border: none;
+    background-image: url(src/ci.png);
+    background-position: -220px 0;
+    background-color: #1598DC;
+}
+.menu_btn{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-image: url(src/ci.png);
+    background-position: -245px 0;
+    background-color: #1598DC;
+}
+
 
 header{
     display: flex;
@@ -141,6 +171,7 @@ header{
     align-items: center;
     width: 980px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .header_main{
@@ -148,7 +179,7 @@ header{
     align-items: start;
     padding-left: 40px;
     justify-content: space-between;
-    width: 100%;
+    width: 940px;
     border-width: 1px 0 0 0;
     border-style: solid;
 }
