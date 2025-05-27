@@ -1,0 +1,183 @@
+@font-face {
+    font-family: NanumB;
+    src: url(./font/NanumGothicBold.otf);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: Nanum;
+    src: url(./font/NanumGothic.otf);
+    font-weight: bold;
+  }
+body{
+    background-image:url(src/navi_background.png);
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'NanumB';
+}
+
+.navi{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.naviFirst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+}
+
+.naviFirst_img{
+    overflow: hidden;
+    width: 189px;
+    height: 33px;
+}
+
+.naviFirst_img img{
+    object-fit: cover;
+}
+
+.naviFirst-items{
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.naviFirst-items ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px;
+    position: relative;
+}
+
+/* li 항목 간 구분 점 (·) 추가 */
+.naviFirst-items ul li:not(:last-child)::after {
+    content: "·";
+    color: #aaa;
+}
+
+.naviFirst-items ul li{
+    font-family: 'Nanum';
+    overflow: hidden;
+    display: block;
+    height: 13px;
+    padding: 9px;
+    color: #4f5156;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* 그룹 사이에 수직 구분선 넣기 (두 번째 그룹부터) */
+.naviFirst-items ul:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px;
+    border-left: 1px solid #aaa;
+}
+
+
+.naviSecond{
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    height: 64.99px;
+    background-color: white;
+    margin: 8px 8px 0;
+    background-clip: content-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+.naviSecond-items {
+    display: flex;
+    list-style: none;
+    padding-left: 35px;
+    align-items: center;
+}
+
+.naviSecond-items li {
+    padding: 24px 10px 23px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+}
+  
+.naviSecond-items li:hover {
+    color: #0075ff;
+    border-bottom: 2px solid #0075ff;
+    z-index: 100;
+}
+
+.naviSecond div{
+    display: flex;
+    justify-content: end;
+}
+
+.naviSecond button{
+    background-color: #1598DC;
+    width: 65px;
+    height: 65px;
+    border: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.header_main{
+    display: flex;
+    align-items: start;
+    padding-left: 40px;
+    justify-content: space-between;
+    width: 100%;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+}
+
+header h1{
+    color: #0e0f0f;
+    margin: 60px 0px;
+}
+
+.header_main h2{
+    padding-top: 47px;
+    font-size: 38px;
+    margin: 0 0;
+    color: #444444;
+    
+}
+
+.header_main h2 span{
+    color: #1598DC;
+}
+
+.guideimg{
+    width: 500px;
+
+}
+.guideimg img{
+    width: 100%;
+}
+
+header {
+
+}
