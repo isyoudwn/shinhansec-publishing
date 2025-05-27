@@ -160,28 +160,12 @@ body {
     width: 100%
 }
 
-.wrapper {
-    position: relative;
-    width: 100%;
-    min-width: 1000px;
-    min-height: 550px;
-    text-align: center;
-    z-index: 102;
-    background: #fff
-}
-
-.wrapper.on {
-    width: 120%;
-    position: absolute;
-    background: white
-}
-
 .header {
     position: relative;
     width: 100%;
     height: 135px;
     margin: 0 auto;
-    background: url(/siw/common/images/common/bg_top.gif) no-repeat 50% 0;
+    background: url(https://ir.shinhaninvest.com/siw/common/images/common/bg_top.gif) no-repeat 50% 0;
     z-index: 103
 }
 
@@ -331,7 +315,7 @@ body {
     left: 0;
     width: 116px;
     height: 31px;
-    background: url(/siw/common/images/common/txt_guide01.png) no-repeat
+    background: url(https://ir.shinhaninvest.com/siw/common/images/common/txt_guide01.png) no-repeat
 }
 
 .boxGuide .listType1 {
@@ -343,7 +327,7 @@ body {
 }
 
 .boxGuide .listType1>li:before {
-    background-image: url(/siw/common/images/common/bg_list.gif)
+    background-image: url(https://ir.shinhaninvest.com/siw/common/images/common/bg_list.gif)
 }
 
 .desc {
@@ -560,7 +544,7 @@ p.listType1{position:relative;padding-left:18px;line-height:24px}
 .listTypeCheck:first-child{margin-top:0}
 .listTypeCheck > li{position:relative;padding-left:22px;margin-top:9px;line-height:22px}
 .listTypeCheck > li:first-child{margin-top:0}
-.listTypeCheck > li:before, p.listTypeCheck:before{content:'';position:absolute;top:4px;left:0;width:15px;height:13px;background:url(/siw/common/images/common/bg_check.gif) no-repeat}
+.listTypeCheck > li:before, p.listTypeCheck:before{content:'';position:absolute;top:4px;left:0;width:15px;height:13px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_check.gif) no-repeat}
 p.listTypeCheck{position:relative;padding-left:22px;line-height:22px}
 
 .listDepth > li, p.listDepth{padding-left:10px;margin-top:9px} /* hypen */
