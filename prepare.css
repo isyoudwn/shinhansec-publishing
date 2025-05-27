@@ -172,7 +172,7 @@ html, body {
 .custom-table th {
   text-align: center;
   background: #f0f1f2;
-  font-weight: 500;
+  font-weight: 400;
   color: #222;
 }
 
@@ -182,7 +182,7 @@ html, body {
 
 .highlight {
   color: #e57373;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .star {
@@ -291,13 +291,13 @@ html, body {
 .step-num {
   font-size: 2.3em;
   color: #8eb6e7;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .step-title {
   font-size: 1.14em;
-  font-weight: 700;
+  font-weight: 400;
   color: #222;
   margin-bottom: 8px;
 }
