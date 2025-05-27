@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 ul {
@@ -160,28 +159,12 @@ body {
     width: 100%
 }
 
-.wrapper {
-    position: relative;
-    width: 100%;
-    min-width: 1000px;
-    min-height: 550px;
-    text-align: center;
-    z-index: 102;
-    background: #fff
-}
-
-.wrapper.on {
-    width: 120%;
-    position: absolute;
-    background: white
-}
-
 .header {
     position: relative;
     width: 100%;
     height: 135px;
     margin: 0 auto;
-    background: url(/siw/common/images/common/bg_top.gif) no-repeat 50% 0;
+    background: url(https://ir.shinhaninvest.com/siw/common/images/common/bg_top.gif) no-repeat 50% 0;
     z-index: 103
 }
 
@@ -331,7 +314,7 @@ body {
     left: 0;
     width: 116px;
     height: 31px;
-    background: url(/siw/common/images/common/txt_guide01.png) no-repeat
+    background: url(https://ir.shinhaninvest.com/siw/common/images/common/txt_guide01.png) no-repeat
 }
 
 .boxGuide .listType1 {
@@ -343,7 +326,7 @@ body {
 }
 
 .boxGuide .listType1>li:before {
-    background-image: url(/siw/common/images/common/bg_list.gif)
+    background-image: url(https://ir.shinhaninvest.com/siw/common/images/common/bg_list.gif)
 }
 
 .desc {
@@ -560,7 +543,7 @@ p.listType1{position:relative;padding-left:18px;line-height:24px}
 .listTypeCheck:first-child{margin-top:0}
 .listTypeCheck > li{position:relative;padding-left:22px;margin-top:9px;line-height:22px}
 .listTypeCheck > li:first-child{margin-top:0}
-.listTypeCheck > li:before, p.listTypeCheck:before{content:'';position:absolute;top:4px;left:0;width:15px;height:13px;background:url(/siw/common/images/common/bg_check.gif) no-repeat}
+.listTypeCheck > li:before, p.listTypeCheck:before{content:'';position:absolute;top:4px;left:0;width:15px;height:13px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_check.gif) no-repeat}
 p.listTypeCheck{position:relative;padding-left:22px;line-height:22px}
 
 .listDepth > li, p.listDepth{padding-left:10px;margin-top:9px} /* hypen */
@@ -626,4 +609,75 @@ p.caution{padding-left:13px}
     .callList {
         grid-template-columns: 1fr
     }
+}
+
+.card-multitab-wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+/*카드 탭 추가*/
+.card-multitab-box {
+    background-color: white;
+    height: 86px;
+    border-top: 2px solid rgb(21, 36, 117);
+}
+
+.card-multitab {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-multitab li {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.card-multitab li a {
+    color: rgb(21, 36, 117);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    width: 152px;
+    border-bottom: none;
+    position: relative;
+    z-index: inherit;
+}
+
+/* 상태별 높이, border, top 조절 */
+.active > a {
+    font-weight: bold;
+    height: 48px;
+    border: 2px solid rgb(21, 36, 117);
+    border-bottom: none;
+    background-color: white;
+    top: 2px;
+    z-index: 2;
+}
+
+.none-active > a {
+    height: 42px;
+    border: 1px solid #c0c0c0;
+}
+
+.none-active:first-child > a {
+    border-right: none;
+}
+
+.none-active:last-child > a {
+    border-left: none;
+}
+
+.card-multitab li a:hover {
+    text-decoration: underline;
 }
