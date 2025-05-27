@@ -461,7 +461,7 @@ body {
 .callList li.call01 strong{letter-spacing:-1px;}
 .callList li .listType1 li{margin-top:5px;font-size:14px}
 .callList li .listType1 > li:first-child{margin-top:0;}
-.callList li .listType1 li:before{background-image:url(/siw/common/images/common/bg_list.gif)}
+.callList li .listType1 li:before{background-image:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_list.gif)}
 .footArea .linkList{float:right;margin-top:40px}
 .footArea .linkList a{position:relative;display:inline-block;width:50px;margin-left:37px;padding:40px 0 0 0;color:#000;font-size:13px;text-align:center}
 .footArea .linkList a:first-child{margin-left:0}
