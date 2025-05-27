@@ -3,16 +3,10 @@ html, body {
     margin: 0;
 }
 
-.wrapper {
+.wrapper-1 {
     width: 980px;
     margin: 0 auto;
-    height: 2856px;
-}
-
-
-.footer {
-    height: 359px;
-    background-color: black;
+    height: 2000px;
 }
 
 .card-multitab-box {
@@ -473,7 +467,6 @@ body{
     font-family: 'Nanum';
     overflow: hidden;
     display: block;
-    height: 13px;
     padding: 9px;
     color: #4f5156;
     font-size: 12px;
@@ -583,4 +576,387 @@ header h1{
 }
 .guideimg img{
     width: 100%;
+}
+
+/*준호님*/
+
+/* 리셋 스타일 */
+ul {
+    list-style: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+
+/*Default set*/
+html,body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,table,th,td{margin:0;padding:0;font-weight:normal}
+body{font-family:'nanumB','돋움',Dotum,'굴림',Gulim;font-size:14px;line-height:1.6;color:#333;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none;}
+input, textarea, select{padding:0;color:#000;font-size:14px;font-family:'nanumB','돋움',Dotum,'굴림',Gulim;box-sizing:border-box}
+input.radio, input.check{border:0;background:none}
+td, th{word-wrap:break-word}
+a:link{text-decoration:none;color:#333}
+a:visited{text-decoration:none;color:#333}
+a:hover, a:active{text-decoration:underline;color:#006bd8}
+button{margin:0;padding:0;border:0;background:none;width:auto;outline:0;vertical-align:middle;font-family:'nanumB','돋움',Dotum,'굴림',Gulim;cursor:pointer}
+button:focus{outline:1px dotted #333}
+button:hover, input[type=button]:hover{/* text-decoration:underline */}
+button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer}
+button::-moz-focus-inner{margin:0;padding:0;border:0}
+
+fieldset,img{border:none}
+th{border:0;text-align:center}
+td{border:0;empty-cell:show}
+table caption,legend{overflow:hidden;margin-left:-9999px;width:0;height:0;font-size:0;line-height:0}
+ol,ul{list-style:none;}
+ol:after,ul:after{content:"";display:block;clear:both;zoom:1;}
+em{font-style:normal}
+hr{position:absolute;left:-9999px;font-size:0;line-height:0}
+strong{font-weight:600}
+abbr{text-decoration:none}
+
+.clearfix:after{content:"";display:block;clear:both;zoom:1}
+* html .clearfix{zoom:1}
+*:first-child+html .clearfix{zoom:1}
+.hidden{position:absolute;left:-9999px;font-size:0;line-height:0;text-indent:-9999px}
+.hidden2{display: none;}
+.fLeft{float:left !important}
+.fRight{float:right !important}
+.t_left{text-align:left !important}
+.t_right{text-align:right !important}
+.t_center{text-align:center !important}
+.v_top{vertical-align:top !important}
+.v_middle{vertical-align:middle !important}
+
+.colPoint01{color:#006bd8 !important} /* blue */
+.colPoint02{color:#152475 !important} /* navy */
+.colPoint03{color:#da3b3b !important} /* red */
+.colPoint04{color:#666 !important} /* light gray */
+.colPoint05{color:#fff !important} /* white */
+.colGrey{color:#333 !important}
+.txtUp{color:#cc1e1e !important} /* 상승red */
+.txtDown{color:#2173cf !important} /* 하락blue */
+.pointBg{background-color:#fdfade !important}
+
+.linkBlue, .linkBlue:link, .linkBlue:visited, .linkBlue:hover, .linkBlue:active{color:#3349cd;text-decoration:underline}
+.linkRed, .linkRed:link, .linkRed:visited, .linkRed:hover, .linkRed:active{color:#da3b3b;text-decoration:underline}
+
+.w100{width:100% !important;}
+
+.mar0{margin:0 !important}
+.marT0{margin-top:0 !important}
+.marT5{margin-top:5px !important}
+.marT10{margin-top:10px !important}
+.marT15{margin-top:15px !important}
+.marT20{margin-top:20px !important}
+.marT25{margin-top:25px !important}
+.marT30{margin-top:30px !important}
+.marT33{margin-top:33px !important}
+.marT35{margin-top:35px !important}
+.marT40{margin-top:40px !important}
+.marT55{margin-top:55px !important}
+.vspace{margin-top:60px !important} /* 단락별 간격 */
+.marT100{margin-top:100px !important}
+.dis_in{display:inline-block !important}
+
+.marL0{margin-left:0px !important}
+.marL4{margin-left:4px !important}
+.marL5{margin-left:5px !important}
+.marL7{margin-left:7px !important}
+.marL8{margin-left:8px !important}
+.marL10{margin-left:10px !important}
+.marL15{margin-left:15px !important}
+.marL18{margin-left:18px !important}
+.marL60{margin-left:60px !important}
+.marR50{margin-right:50px !important}
+
+.marB20{margin-bottom:20px !important}
+.marB60{margin-bottom:60px !important}
+
+.padL10{padding-left:10px !important}
+.padL15{padding-left:15px !important}
+.padR10{padding-right:10px !important}
+.padR25{padding-right:25px !important}
+.padR35{padding-right:35px !important}
+
+.font11{font-size:11px !important;}
+.font12{font-size:12px !important;}
+.font13{font-size:13px !important;}
+.font14{font-size:14px !important;}
+.font15{font-size:15px !important;}
+.font16{font-size:16px !important;}
+.font17{font-size:17px !important;}
+.font18{font-size:18px !important;}
+
+.lh14 {line-height: 1.4!important;}
+
+.letterType1{letter-spacing:-1px;}
+
+.f_normal {font-weight:normal !important;}
+.f_bold {font-weight:bold !important;}
+.bold{font-weight:bold;}
+
+.skipNavi{left:0;top:0;text-align:center;width:100%;z-index:100;background:#152478;font-size:21px}
+.skipNavi a{overflow:hidden;display:block;height:0;width:0;margin-bottom:-1px;text-align:center;white-space:nowrap;color:#fff}
+.skipNavi a:focus, .accessbility a:active{height:auto;width:auto;padding:18px 0;color:#fff}
+
+
+
+
+
+/* ✅ 본문 전체 감싸는 영역 */
+.contents {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: left;
+    z-index: 1;
+    font-family: 'nanumB', '돋움', Dotum, '굴림', Gulim, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+body {
+    font-family: 'nanumB', '돋움', Dotum, '굴림', Gulim;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none
+}
+
+/* layout */
+/* html, body, #wrapper{width:100%;height:100%}
+body > #wrapper{height:auto;min-height:100%} */
+body {
+    width: 100%
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 550px;
+    text-align: center;
+    z-index: 102;
+    background: #fff
+}
+
+.wrapper.on {
+    width: 120%;
+    position: absolute;
+    background: white
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 135px;
+    margin: 0 auto;
+    background: url(/siw/common/images/common/bg_top.gif) no-repeat 50% 0;
+    z-index: 103
+}
+
+.header .headArea {
+    position: relative;
+    width: 996px;
+    margin: 0 auto
+}
+
+.sGnb {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10
+}
+
+.container {
+    min-width: 1000px;
+    margin-top: 90px
+}
+
+.contents {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    text-align: left;
+    z-index: 1
+}
+
+
+
+/* ===== FOOTER ================================================== */
+.footer{position:relative;width:100%;border-top:1px solid #f1f1f3;text-align:center;background:#fafbfb;z-index:100}
+
+/* footer */
+.footArea{width:980px;margin:0 auto;text-align:left}
+.footArea:after{content:"";display:block;clear:both;zoom:1}
+.callList{float:left;width:657px;height:145px;margin-top:30px}
+.callList > li{float:left}
+.callList li.call01{width:220px} /*width:253px*/
+.callList li.call02{width:180px}
+.callList li.call02 .link{display:block;}
+.callList li.call03{width:230px} /*width:200px*/
+.callList li .tit{color:#000;font-size:14px;font-weight:600;}
+.callList .call02 .infoText{font-size:12px;color:#333;line-height:22px;}
+.callList li em{display:block;color:#000;font-size:18px}
+.callList li strong{display:block;color:#1598dc;font-size:32px;font-weight:normal}
+/* 2020-01-02 삭제 .callList li.call01 em{font-size:16px}*/
+.callList li.call01 strong{letter-spacing:-1px;}
+.callList li .listType1 li{margin-top:5px;font-size:14px}
+.callList li .listType1 > li:first-child{margin-top:0;}
+.callList li .listType1 li:before{background-image:url(/siw/common/images/common/bg_list.gif)}
+.footArea .linkList{float:right;margin-top:40px}
+.footArea .linkList a{position:relative;display:inline-block;width:50px;margin-left:37px;padding:40px 0 0 0;color:#000;font-size:13px;text-align:center}
+.footArea .linkList a:first-child{margin-left:0}
+.footArea .linkList a:before{content:'';display:block;position:absolute;top:0;left:50%;margin-left:-18px;width:36px;height:36px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat}
+.footArea .linkList a.link02:before{background-position:-36px 0}
+.footArea .linkList a.link03:before{background-position:-72px 0}
+.footArea .linkList a.link04:before{background-position:-108px 0}
+.footArea .comLink{clear:both;position:relative;height:40px;border-top:1px solid #c2c5c6;border-bottom:1px solid #c2c5c6}
+.footArea .comLink .list{margin-left:10px}
+.footArea .comLink .list li{float:left}
+.footArea .comLink .list li a{position:relative;display:block;height:40px;padding:0 10px;font-weight:600;line-height:42px}
+.footArea .comLink .list li a:before{content:'';display:block;position:absolute;top:14px;left:0;width:1px;height:12px;background:#c5c6c6}
+.footArea .comLink .list li:first-child a:before{display:none}
+.footArea .comLink .familySite{position:absolute;top:0;right:230px;width:236px}
+.footArea .comLink .familySite > a{position:relative;display:block;height:40px;padding-left:20px;color:#333;line-height:42px;background:#eeefef}
+.footArea .comLink .familySite > a:after{content:'';display:block;position:absolute;top:15px;right:20px;width:13px;height:7px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat -144px 0}
+.footArea .comLink .familySite > a:hover{text-decoration:none}
+.footArea .comLink .familySite .list{display:none;position:absolute;bottom:40px;right:0;width:100%;border:1px solid #b8b8b8;box-sizing:border-box;background:#f0f1f1}
+.footArea .comLink .familySite .list .inner{overflow:hidden;height:165px;padding:5px 0;box-sizing:border-box}
+.footArea .comLink .familySite .list a{display:block;padding:2px 10px 0;color:#000;line-height:29px}
+.footArea .comLink .familySite .list a:hover{background:#fff}
+.footArea .comLink .familySite .list .inner .jspTrack{background:#dcdedf}
+.footArea .comLink .familySite .list .inner .jspDrag{background:#f0f1f1}
+.footArea .comLink .socialList{position:absolute;top:10px;right:0}
+.footArea .comLink .socialList:after{content:'';display:block;clear:both}
+.footArea .comLink .socialList li{float:left;margin-left:10px}
+.footArea .comLink .socialList li a{display:block;width:22px;height:22px;text-indent:-9999px;font-size:0;line-height:0;background:url(https://ir.shinhaninvest.com/siw/common/images/common/ico_social.gif) no-repeat 0 0}
+
+
+/*2021-03-03 수정 */
+.footArea .comLink .socialList li.socialList02>a{background-position:-22px 0}
+.footArea .comLink .socialList li.socialList03>a{background-position:-22px 0}/* 2025-02-06 수정 */
+.footArea .comLink .socialList li.socialList04>a{background-position:-66px 0}
+.footArea .comLink .socialList li.socialList05>a{background-position:-88px 0}
+.footArea .comLink .socialList li.socialList06>a{background-position:-110px 0}
+.footArea .comLink .socialList li.socialList07>a{background-position:-132px 0}
+
+
+.footArea .footBtm{overflow:hidden;position:relative;margin:16px 0;}
+.footArea .footBtm .list{margin-left:-11px}
+.footArea .footBtm .list a{position:relative;display:inline-block;padding:0 9px 0 11px;color:#666;font-size:13px}/* 2019-08-28 padding : 0 10px 0 12px 수정 */
+.footArea .footBtm .list a:before{content:'';display:block;position:absolute;top:9px;left:0;width:2px;height:2px;background:#8a8885}
+.footArea .footBtm .list a.col{color:#152475}
+.footArea .footBtm .snsList{position:absolute;top:4px;right:0}
+.footArea .footBtm .snsList a{display:inline-block;width:28px;height:28px;overflow:hidden;text-indent:-9999px;margin-left:1px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat 0 -36px}
+.footArea .footBtm .snsList a.fb{background-position:-32px -36px}
+.footArea .footBtm .snsList a.tw{background-position:-64px -36px}
+.footArea .footBtm .snsList a.tw2{background-position:-96px -36px}
+.footArea .footBtm .webAcc_Mark{overflow:hidden;text-indent:-9999px;display:block;position:absolute;top:25px;right:75px;width:59px;height:38px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat -144px -27px}
+.footArea .footBtm .webAward_Mark{overflow:hidden;text-indent:-9999px;display:block;position:absolute;top:23px;right:77px;width:53px;height:72px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat 0 -65px}
+.footArea .footBtm .copyright{margin-top:3px;color:#666;font-size:13px}
+.footArea .footBtm .ccm_Mark{overflow:hidden;text-indent:-9999px;display:block;position:absolute;top:40px;right:75px;width:59px;height:38px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat -144px -69px}
+.footArea .footBtm .oneShinhanLogo{overflow:hidden;text-indent:-9999px;display:block;position:absolute;top:45px;right:0;width:68px;height:27px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_footer.gif) no-repeat -53px -64px}
+
+
+/* list */
+.listType1{margin-top:15px;text-align:left}
+.listType1:first-child{margin-top:0}
+.listType1 > li{position:relative;padding-left:18px;margin-top:9px;line-height:22px}
+.listType1 > li:first-child{margin-top:0}
+.listType1 > li:before, p.listType1:before{content:'';position:absolute;top:9px;left:8px;width:18px;height:3px;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_list2.gif) no-repeat}
+.listType1 .btnS{margin-left:10px}
+.listType1 .btnS+.btnS{margin-left:5px}
+.listType1 ul, .listType1 ol, .listType1 p{margin:6px 0!important}
+.listType1 table{margin:10px 0!important}
+.listType1 li li{margin-top:4px}
+p.listType1{position:relative;padding-left:18px;line-height:24px}
+.listType1.type1{margin-left:-8px;}
+.listType1.type3 > li:before, p.listType1.type3:before{width:3px;height:3px;background:#666;}
+.listType1.tyepAcc > li{line-height: 24px;}
+.listType1.tyepAcc > li:before {top:10px;}
+.listType1.tyepAcc > li .js-acd + div {padding:0 0 10px;}
+.listType1.tyepAcc > li .js-acd-toggle-btn {position: absolute; right: 0; padding-left:10px; padding-right:10px;}
+.listType1.tyepAcc > li .js-acd .icoToggle {margin-left: 5px;}
+
+.listTypeCheck{margin-top:15px;text-align:left}
+.listTypeCheck:first-child{margin-top:0}
+.listTypeCheck > li{position:relative;padding-left:22px;margin-top:9px;line-height:22px}
+.listTypeCheck > li:first-child{margin-top:0}
+.listTypeCheck > li:before, p.listTypeCheck:before{content:'';position:absolute;top:4px;left:0;width:15px;height:13px;background:url(/siw/common/images/common/bg_check.gif) no-repeat}
+p.listTypeCheck{position:relative;padding-left:22px;line-height:22px}
+
+.listDepth > li, p.listDepth{padding-left:10px;margin-top:9px} /* hypen */
+.listDepth > li:first-child{margin-top:0}
+.listDepth > li:before, p.listDepth:before{content:'-';display:inline-block;width:10px;margin-left:-10px}
+
+.listNum{counter-reset:number 0}
+.listNum li > ul, .listNum li > ol, .listNum li > p{margin:6px 0!important}
+.listNum table{margin:10px 0!important}
+.listNum > li{margin-top:4px;padding-left:23px;line-height:22px;}
+.listNum > li:first-child{margin-top:0}
+.listNum > li:before{content:counter(number)'. ';counter-increment:number 1;display:inline-block;width:23px;margin-left:-23px}
+.listDepth > li .listNum{margin:10px 0}
+.numDepth{counter-reset:number 0;margin:6px 0}
+.numDepth > li{margin-top:4px;padding-left:23px}
+.numDepth > li:before{content:'('counter(number)')';counter-increment:number 1;display:inline-block;width:23px;margin-left:-23px}
+.numDepth > li+li+li+li+li+li+li+li+li+li{padding-left:32px}
+.numDepth > li+li+li+li+li+li+li+li+li+li:before{width:32px;margin-left:-32px}
+.numRound > li{padding-left:21px}
+.numRound > li:before{content:counter(number);width:13px;height:14px;margin:0 5px 0 -21px;padding-right:1px;border:1px solid #747474;border-radius:14px;font-size:9px;line-height:16px;text-align:center;letter-spacing:-1px}
+.colPoint03 .numRound > li:before{border-color:#da3b3b}
+
+.listHangle{margin:6px 0;padding-left:20px}
+.listHangle > li{margin-top:4px}
+.listHangle .bl{display:inline-block;width:20px;margin-left:-20px}
+
+.caution{margin-top:15px;color:#666;font-size:13px;line-height:21px}
+.caution > li{padding-left:13px;margin-top:4px}
+.caution > li:before, p.caution:before{content:'※';display:inline-block;width:13px;margin-left:-13px}
+.caution .listDepth > li{margin-top:0}
+.caution .btnS{margin-left:10px}
+p.caution{padding-left:13px}
+.boxInfo + p.caution{text-align:right !important}
+.caution.dis_in{display:inline-block;margin:0 0 0 6px}
+.listType1+.caution{margin-left:8px}
+.caution.font16 {line-height:23px; padding-left:16px;}
+.caution.font15 {line-height:23px; padding-left:15px;}
+.caution.font16  > li:before, p.caution.font16:before {width:16px; margin-left:-16px}
+.caution2{position:relative;display:block;padding-left:20px;}
+.caution2:before{content:'※';position:absolute;left:0;top:0;display:inline-block;width:13px;}
+
+.authInfo{margin-top:15px;padding-left:13px;color:#666;font-size:13px;line-height:21px;text-align:right} /* 심사필 */
+.authInfo:before{content:'※';display:inline-block;width:13px;margin-left:-13px}
+.authInfo + .authInfo{margin-top:0;}
+
+
+/* ---- BREAKPOINTS --------------------------------------------- */
+@media(max-width:1024px) {
+    .callWrap {
+        flex-wrap: wrap
+    }
+
+    .callList {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .linkList {
+        margin-top: 24px
+    }
+}
+
+@media(max-width:640px) {
+    .callList {
+        grid-template-columns: 1fr
+    }
 }
