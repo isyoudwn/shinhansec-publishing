@@ -22,18 +22,15 @@ html, body {
     background-color: blue;
 }
 
-.section {
-    height: 100%;
-}
-
 .footer {
     height: 359px;
     background-color: black;
 }
 
-.card-multitab-wrapper {
+.card-multitab-box {
     background-color: white;
-    border-bottom: 2px solid rgb(21, 36, 117);
+    height: 86px;
+    border-top: 2px solid rgb(21, 36, 117);
 }
 
 .card-multitab {
@@ -96,23 +93,30 @@ html, body {
 
 .titDep2 {
   position: relative;
-  padding-left: 10px;
   font-size: 21px;
   font-weight: 700;
   color: #111;
-  margin-top: 148px;
+  line-height: 1.3;
+  margin-top: 60px;
   margin-bottom: 18px;
-  line-height: 1.3; /* 텍스트 높이 안정화 */
 }
 
-.titDep2:before{content:'';display:inline-block;width:5px;height:19px;margin:-2px 8px 0 0;vertical-align:middle;background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_titdep.gif) 0 0 no-repeat}
+.titDep2:before{
+  content:'';
+  display:inline-block;
+  width:5px;
+  height:19px;
+  margin:-2px 8px 0 0;
+  vertical-align:middle;
+  background:url(https://ir.shinhaninvest.com/siw/common/images/common/bg_titdep.gif) 0 0 no-repeat
+}
 
 /* 하위 제목 */
 .titDep3 {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: bold;
   color: #191970; /* 짙은 남색 */
-  margin: 24px 0 12px;
+  margin: 30px 0 18px;
 }
 
 /* 리스트 */
@@ -142,15 +146,271 @@ html, body {
 }
 
 .btnM {
-    border: solid 0.9px rgb(153, 153, 153);
-    width: 103px;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 28px;
-    margin-top: 10px;
-    margin-bottom: 10px; /* 아래쪽 간격 추가 */
-    margin-left: 10px;
-    font-size: 14px;
-    line-height: 30px;
-    display: inline-block; /* 간격 조절 시 안전하게 */
+  display: inline-block;
+  padding: 6px 16px;
+  margin: 10px 0 0 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+}
+
+.btnM:hover {
+  background-color: #f0f0f0;
+  border-color: #666;
+}
+
+.custom-table {
+  font-size: 14px;
+  width: 100%;
+  border-top: 1.4px solid #191970;
+  border-bottom: 1.4px solid #191970;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);  
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  height: 49px;
+}
+.custom-table td {
+  padding-left: 12px;
+  line-height: 22px;
+}
+
+.custom-table th {
+  text-align: center;
+  background: #f0f1f2;
+  font-weight: 500;
+  color: #222;
+}
+
+.custom-table tr:not(:last-child) {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.highlight {
+  color: #e57373;
+  font-weight: 500;
+}
+
+.star {
+  color: #4169e1;
+  font-weight: bold;
+}
+
+.info-btn {
+  margin-left: 10px;
+  padding: 3px 14px;
+  background: #f5f6fa;
+  border: 1px solid #bfc5d2;
+  border-radius: 2px;
+  font-size: 0.97em;
+  color: #222;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.deposit-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+  border-top: 1.4px solid #191970;
+  border-bottom: 1.4px solid #191970;
+}
+
+.deposit-table th,
+.deposit-table td {
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 1.07em;
+  width: 326px;
+  font-size: 14px;
+}
+
+.deposit-table th {
+  text-align: center;
+  vertical-align: middle;
+  background: #f0f1f2;
+  font-weight: 500;
+  color: #222;
+  height: 48px;
+}
+
+.deposit-table td {
+  padding: 15px 15px 12px;
+}
+
+.note {
+  color: rgb(0, 107, 216);
+  font-size: 13px;
+  margin-bottom : 0px;
+  margin-left : 0px;
+  margin-right : 0px;
+  margin-top : 9px;
+  padding-bottom : 0px;
+  padding-right : 0px;
+  padding-top : 0px;
+}
+.note::before {
+  content: "※";
+}
+
+.bank-list {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.97em;
+  color: #191970; /* 짙은 남색 */
+}
+
+.blue-bar {
+  display: inline-block;
+  width: 6px;
+  height: 22px;
+  background: #2b5fc9;
+  margin-right: 8px;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.steps-container {
+  display: flex;
+  gap: 0;
+  justify-content: flex-start;
+}
+
+.step-box {
+  flex: 1 1 0;
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  background: #fafbfc;
+  padding: 32px 20px 24px 28px;
+  box-sizing: border-box;
+  min-width: 220px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step-box:last-child {
+  border-right: 1px solid #e0e0e0;
+}
+
+.step-num {
+  font-size: 2.3em;
+  color: #8eb6e7;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-size: 1.14em;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.step-btn {
+  background: #fff;
+  border: 1px solid #bfc5d2;
+  border-radius: 2px;
+  padding: 6px 18px;
+  font-size: 1em;
+  color: #222;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.step-btn:hover {
+  background: #f5f7fa;
+}
+
+.step-box:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml;utf8,<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8l8 8-8 8" stroke="%23e0e0e0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center center;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .steps-container {
+    flex-direction: column;
+  }
+  .step-box {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: none;
+    min-width: unset;
+  }
+  .step-box:not(:last-child):after {
+    display: none;
+  }
+}
+.tableBottom {
+  width: 100%;
+  border-top: 1.4px solid #191970;
+  border-bottom: 1.4px solid #191970;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.tableBottom th, .tableBottom td {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  padding: 15px;
+  font-size: 14px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.tableBottom th {
+  width: 196px;
+  height: 50px;
+  background-color: #f0f1f2;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.tableBottom td {
+  width: auto;
+}
+
+.tableBottom td ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.tableBottom li::before {
+  content: "- ";
+  margin-left: -13px;
+  display: inline-block;
+}
+
+.tableBottom li {
+  line-height: 22px;
+  padding-left: 10px;
+  font-size: 14px;
+  list-style: none;
 }
