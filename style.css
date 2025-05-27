@@ -126,7 +126,6 @@ body{
     display: flex;
     justify-content: end;
 }
-
 .naviSecond .btns{
     background-color: #1598DC;
     width: 65px;
@@ -170,6 +169,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 980px;
+    padding-bottom: 60px;
     margin: 0 auto;
     padding-bottom: 60px;
 }
@@ -207,8 +207,4 @@ header h1{
 }
 .guideimg img{
     width: 100%;
-}
-
-header {
-
 }

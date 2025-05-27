@@ -5,30 +5,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>공모주 청약 가이드</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="POSS1.css" />
 </head>
 
 <body>
 
-    <div class="contents">
+    <nav class="navi">
+        <!-- 맨 위 네비게이션 -->
+        <!-- 네비게이션 첫 줄 -->
+         <div class="naviFirst">
+            <div class="naviFirst_img">
+                <img src="src/ci.png" alt="ci_logo">
+            </div>
+            <div class="naviFirst-items">
+                <ul>
+                    <li>로그인</li>
+                    <li>계좌계설</li>
+                    <li>ID등록</li>
+                    <li>인증센터</li>
+                </ul>
+                <ul>
+                    <li>신한Premier</li>
+                    <li>퇴직연금</li>
+                    <li>GIB</li>
+                    <li>Tops Club</li>
+                </ul>
+                <ul>
+                    <li><strong>소비자보호포털</strong></li>
+                    <li><strong>상품공시실</strong></li>
+                </ul>
+            </div>
+            
+         </div>
+         <!-- 두번째 줄 네비게이션 -->
+         <div class="naviSecond">
+            <ul class="naviSecond-items">
+                <li>나의 자산분석</li>
+                <li>자산관리몰</li>
+                <li>연금자산</li>
+                <li>트레이딩</li>
+                <li>투자정보</li>
+                <li>뱅킹/공모주/업무</li>
+                <li>고객센터</li>
+            </ul>
+            <div>
+                <div class="btns"><button class="mypage_btn"></button></div>
+                <div class="btns"><button class="search_btn"></button></div>
+                <div class="btns"><button class="menu_btn"></button></div>
+            </div>
+         </div>
+    </nav>
+    <header>
+        <!-- 청약, 한번에 신청하세요! 부분 -->
+        <h1>청약 가이드</h1>
+        <div class="header_main">
+            <h2>
+                <!-- 청약가이드 텍스트 -->
+                 청약,<br>
+                 한번에 신청하세요!<br>
+                 <span>청약가이드</span>
+            </h2>
+            <div class="guideimg">
+                <img src="src/guideimg.png" alt="가이드 이미지">
+            </div>
+            
+        </div>
+    </header>
+    
+    <div class="card-multitab-wrapper">
+      <ul class="card-multitab">
+        <li class="active"><a href="./guidePOSS1.html">공모주 청약이란?</a></li>
+        <li class="none-active"><a href="./prepare.html">청약준비물/신청방법</a></li>
+        <li class="none-active"><a href="#">FAQ</a></li>
+      </ul>
+      <div class="card-multitab-box"></div>
+    </div>
 
-        <!-- ✅ 탭 메뉴 -->
-        <ul class="tabType multiTab">
-            <li class="on"><a href="guidePOSS.html">공모주 청약이란?</a></li>
-            <li><a href="guidePOSStab2.html">청약준비물/신청방법</a></li>
-            <li><a href="guidePOSStab3.html">FAQ</a></li>
-        </ul>
+
+    <div class="contents">
 
         <!-- ✅ 본문 콘텐츠 시작 -->
         <h2 class="titDep2 vspace">공모주 청약이란?</h2>
         <p class="listType1 marT10">신규 상장 기업의 주식을 배정받기 위해 청약하는 것입니다. 증권사에서 청약을 하면, 최종 경쟁률과 총 청약자수에 따라 주식을 배정받게 됩니다.</p>
         <h2 class="titDep2 vspace">상장은 어떤 순서로 진행이 되나요?</h2>
         <div class="boxImg">
-            <img src="image/상장.png" alt="img">
+            <img src="src/상장.png" alt="img">
         </div>
         <h2 class="titDep2 vspace">배정방식은 어떻게 되나요?</h2>
         <div class="boxImg">
-            <img src="image/배정방식.png" alt="img">
+            <img src="src/배정방식.png" alt="img">
         </div>
         <h3 class="titDep3">균등배정이란?</h3>
         <p class="listType1 marT10">총 청약인원에 대해[1/N]로 배정</p>
@@ -278,15 +344,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- 패밀리사이트 열기/닫기용 아주 간단한 토글 스크립트 -->
-    <script>
-        document.querySelector('.familySite .toggle')?.addEventListener('click', e => {
-            const list = e.currentTarget.nextElementSibling;
-            list.classList.toggle('open');
-            e.currentTarget.setAttribute('aria-expanded', list.classList.contains('open'));
-        });
-    </script>
 
 
 </body>
